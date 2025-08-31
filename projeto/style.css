@@ -1,0 +1,21 @@
+* {
+  background-image: linear-gradient(
+    to right,
+    #10454f,
+    #506266,
+    #818274,
+    #a3ab78
+  );
+  background-size: 500% 100%;
+  animation: degrade 5s infinite alternate;
+}
+@keyframes degrade {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+/* referencia como monta um degrade foi usado keyframes para monta animação 
+paleta de cores https://cssgradient.io/shades-of-green */
