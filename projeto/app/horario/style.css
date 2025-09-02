@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    #10454f,
+    #506266,
+    #818274,
+    #a3ab78
+  );
+  background-size: 500% 100%;
+  animation: degrade 5s infinite alternate;
+}
+@keyframes degrade {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+#stopwatch {
+  display: flex;
+  flex-direction: column;
+  background-color: #262626;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+#timer {
+  background-color: rgb(63, 63, 63);
+  height: 250px;
+  width: 250px;
+  border: 3px solid #818274;
+  margin-bottom: 1.5rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 30px;
+  color: #ffffff;
+  padding: 4rem;
+}
+
+#action {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#action button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  background-color: rgb(63, 63, 63);
+  transition: background-color 0.2s ease-in;
+  cursor: pointer;
+}
+
+#actions button:hover {
+  background-color: black;
+}
+
+#marks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  color: #ffffff;
+}
+
+#marks-list p:first-child {
+  margin-top: 1.5rem;
+}
